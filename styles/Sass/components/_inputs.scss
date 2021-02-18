@@ -1,0 +1,56 @@
+//********** INPUTS **********/
+.input {
+    padding: 0.6rem;
+    box-sizing: border-box;
+
+    width: 50%;
+    @media only screen and (max-width: $bp-600) {
+        width: 75%;
+        padding: 0.4rem;
+    }
+
+    &__label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.8rem;
+    }
+
+    &__element {
+        outline: none;
+        border: 1px solid #ccc;
+        background-color: white;
+        font: inherit;
+        padding: 0.6rem 1rem;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 6px;
+
+        @media only screen and (max-width: $bp-600) {
+            padding: 0.4rem 1rem;
+        }
+
+        &:focus {
+            outline: none;
+            // border: 2px solid var(--green);
+            box-shadow: 0 0 1px 2px var(--green);
+        }
+    }
+}
+
+.invalid {
+    box-shadow: 0 0 1px 2px var(--danger);
+    background-color: rgb(255, 225, 225);
+
+    &:focus {
+        box-shadow: 0 0 1px 2px var(--danger) !important;
+    }
+}
+.valid {
+    box-shadow: 0 0 1px 2px var(--green);
+
+    &:focus {
+        box-shadow: 0 0 1px 2px var(--green) !important;
+    }
+}
+//************************************

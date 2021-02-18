@@ -1,0 +1,32 @@
+//********** BURGER **********/
+
+.burger {
+    width: 100%;
+    margin: auto;
+    height: 28rem;
+    overflow: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    // max-height: 20rem;
+
+    @media only screen and (max-width: $bp-500) {
+        max-height: 20rem;
+    }
+
+    @media (min-width: $bp-500) and (min-height: $bp-400) {
+        width: 350px;
+        height: 300px;
+    }
+
+    @media (min-width: $bp-500) and (min-height: 401px) {
+        width: 450px;
+        height: 400px;
+    }
+
+    @media (min-width: $bp-1000) and (min-height: $bp-700) {
+        width: 700px;
+        height: 520px;
+    }
+}
+//************************************

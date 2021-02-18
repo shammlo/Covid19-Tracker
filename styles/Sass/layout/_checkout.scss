@@ -1,0 +1,22 @@
+//********** CHECKOUT ***********/
+.checkout {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    // @media only screen and (max-width: $bp-600) {
+    //     width: 80%;
+    // }
+
+    &__content {
+        width: 100%;
+        // height: 30rem;
+        margin: auto;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+    }
+}
+//************************************

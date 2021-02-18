@@ -1,0 +1,36 @@
+//********** LOGO **********/
+.logo {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.8rem;
+    height: 3.4rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    @media only screen and (max-width: $bp-500) {
+        height: 3.2rem;
+    }
+
+    &__img {
+        height: 100%;
+    }
+}
+.sideDrawer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-500) {
+        height: 3.5rem;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+    }
+
+    .logo__img {
+        @media only screen and (max-width: $bp-500) {
+            height: 80%;
+        }
+    }
+}
+
+//************************************

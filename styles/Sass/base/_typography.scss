@@ -1,0 +1,30 @@
+//********** TYPOGRAPHY **********/
+.ingredient__error {
+    text-align: center;
+    font-size: 1.5rem;
+    &--warning {
+        color: var(--warning);
+    }
+}
+.error {
+    display: block;
+    width: 25%;
+    height: 2rem;
+    margin: 0 auto;
+    background-color: var(--warning-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    &__message {
+        // color: var(--)
+    }
+}
+//************************************
+#caseIncrease {
+    color: var(--good);
+}
+#caseIncrease::before {
+    content: '\01F86B';
+    margin-right: 0.5rem;
+}

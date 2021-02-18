@@ -1,0 +1,45 @@
+//********** UTILITIES **********/
+.f-w700 {
+    font-weight: 700;
+}
+.fc-green {
+    color: var(--green);
+}
+.fc-brown {
+    color: #9b4109;
+}
+.fc-gold {
+    color: var(--warning);
+}
+.fc-g {
+    color: var(--warning);
+}
+
+.fc-darkRed {
+    color: #bf3813;
+}
+
+.d-none {
+    @media only screen and (max-width: 499px) {
+        display: none;
+    }
+}
+.m-l-s {
+    margin-left: 1rem;
+}
+.m-l-m {
+    margin-left: 2rem;
+}
+.m-t-s {
+    margin-top: 1rem;
+}
+
+.s-mid {
+    display: block;
+    width: 10rem;
+}
+
+.disabled:disabled {
+    cursor: not-allowed;
+}
+//*********************************

@@ -1,0 +1,26 @@
+//********** MODAL **********/
+.modal {
+    position: fixed;
+    z-index: 500;
+    // background-color: rgba(255, 255, 255, 0.8);
+    background-color: #242526;
+    width: 70%;
+    border: 1px solid #1f2020;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    color: var(--color-black);
+    border-radius: 6px;
+    font-size: 1.1rem;
+    color: var(--color-white);
+
+    @media only screen and (min-width: $bp-600) {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
+
+//************************************

@@ -1,0 +1,31 @@
+//********** SIDE DRAWER ***********/
+.sideDrawer {
+    position: fixed;
+    width: 15rem;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: var(--dark-4);
+    padding: 3.2rem 1.6rem;
+    box-sizing: border-box;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: transform 0.3s ease-out;
+    display: none;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-500) {
+        display: block;
+    }
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(-100%);
+}
+//************************************

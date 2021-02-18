@@ -1,0 +1,31 @@
+// * ---- MAIN -----*\\
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './base/base';
+@import './base/utilities';
+@import './base/typography';
+
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/mobileNavigation';
+@import './layout/checkout';
+@import './layout/contact';
+@import './layout/authentication';
+@import './layout/topNavigation';
+
+@import './components/animations';
+@import './components/buttons';
+@import './components/burgerIngredients';
+@import './components/burger';
+@import './components/cardBox';
+@import './components/buildControls';
+@import './components/modal';
+@import './components/backdrop';
+@import './components/logo';
+@import './components/sideDrawer';
+@import './components/loader';
+@import './components/order';
+@import './components/inputs';
+
+@import './pages/home';
