@@ -6,6 +6,7 @@ import NavigationItem from './NavigationItems/NavigationItem';
 const NavigationList = () => {
     return (
         <ul className="navigation__list">
+            <NavigationItem title="Pages" href="" />
             <NavigationItem href="/" title="Home">
                 <div className="navigation__item--icon">
                     <svg
@@ -22,7 +23,38 @@ const NavigationList = () => {
                     </svg>
                 </div>
             </NavigationItem>
-            <NavigationItem href="/charts" title="charts" />
+            <NavigationItem href="/charts" title="charts">
+                <div className="navigation__item--icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        className="svg-icon svg-r"
+                    >
+                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                        <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                    </svg>
+                </div>
+            </NavigationItem>
+            <NavigationItem href="/tables" title="Tables">
+                <div className="navigation__item--icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        className="svg-icon svg-r"
+                    >
+                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                        <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                    </svg>
+                </div>
+            </NavigationItem>
         </ul>
     );
 };
