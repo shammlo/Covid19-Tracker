@@ -9,9 +9,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-size: 62.5%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
-    // background-color: var(--dark-3);
 
     @media only screen and (max-width: $bp-1200) {
         font-size: 50%;
@@ -48,7 +47,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2em;
+    padding: 1em;
     width: 100%;
     height: 100vh;
     background-color: rgb(44, 50, 63);
@@ -57,7 +56,6 @@ body {
 
 .app {
     background-color: rgba(16 18 27 / 40%);
-    max-width: 140rem;
     // max-height: 860px;
     height: 100vh;
     overflow: hidden;
@@ -65,7 +63,7 @@ body {
     // border-radius: 14px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    font-size: 15px;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--color-white);
 }
@@ -77,13 +75,16 @@ body {
     height: 100%;
 }
 .main__container {
-    padding: 1rem;
+    padding: 1.8rem;
+    padding: 9rem 2rem 0; //- if top Nav was position fixed
     color: var(--color-white);
     width: 100%;
     overflow: auto;
+    position: relative;
+    // margin-left: 26rem;
 }
 .home {
-    width: 30%;
+    // width: 30%;
     &-content {
         display: flex;
         align-items: center;
