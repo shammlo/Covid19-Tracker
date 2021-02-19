@@ -9,7 +9,12 @@ const charts = () => {
                 <link rel="shortcut icon" href="/virus-1.svg" />
                 <title>Charts</title>
             </Head>
-            <div className="home">Charts</div>
+            <div className="home">
+                {' '}
+                <div className="home-content" style={{ marginBottom: '1rem' }}>
+                    <h1>Hi this is Charts page</h1>
+                </div>
+            </div>
         </>
     );
 };
