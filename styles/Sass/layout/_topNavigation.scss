@@ -1,10 +1,14 @@
 .top-navigation {
-    padding: 1rem;
+    padding: 1.6rem;
     background-color: rgb(40, 48, 70);
     border-radius: 6px;
-    margin-bottom: 1rem;
-    min-height: 4.45rem;
-    font-size: 1.2rem;
+    min-height: 4.4rem;
+    font-size: 1.8rem;
+    width: calc(100% - 26rem - 0.8rem);
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 1rem 2rem 0 1rem;
 }
 
 .svg-icon {
