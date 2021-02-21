@@ -1,29 +1,30 @@
 //********** IMPORTS ************* */
 import React from 'react';
+import Wrapper from '../../../helpers/Hoc/Wrappers/Wrapper';
 //******************************** */
 
 const DataCard = (props: any) => {
     return (
-        <div className="card">
-            <div className="card__box box-one">
-                <span className="card__box--icon">
+        <Wrapper class="card">
+            <Wrapper class="card__box box-one">
+                <Wrapper class="card__box--icon">
                     {/* <img className="icon" src="img/health.svg" alt="Confirmed Icon" /> */}
-                </span>
+                </Wrapper>
                 <h3 className="heading-3">Total name</h3>
                 <h2 className="heading-2 margin-top-small">amount</h2>
-                <div className="card__box--info">
+                <Wrapper class="card__box--info">
                     <span className="info-increase">
                         <span id="caseIncrease">00 </span>
                     </span>
                     <span className="info-text">
                         from yesterday
                         <span id="totalYesterday" className="yel">
-                            00
+                            (00)
                         </span>
                     </span>
-                </div>
-            </div>
-        </div>
+                </Wrapper>
+            </Wrapper>
+        </Wrapper>
     );
 };
 
