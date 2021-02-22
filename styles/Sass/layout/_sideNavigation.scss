@@ -48,8 +48,7 @@
         &--link {
             color: var(--color-grey-light-2);
             height: 100%;
-            width: 100%;
-            padding: 0.6rem 1.2rem;
+            padding: 0.6rem 1rem;
             box-sizing: border-box;
             display: flex;
             align-items: center;
@@ -98,6 +97,10 @@
 
         &:not(:first-child) {
             margin-top: 0.6rem;
+        }
+
+        &--title {
+            animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
         }
     }
 }
