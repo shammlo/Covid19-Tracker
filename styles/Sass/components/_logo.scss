@@ -31,6 +31,9 @@
         &:hover {
             cursor: pointer;
             transform: translateX(2px);
+            &--title {
+                color: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
+            }
         }
     }
     // &::after {
