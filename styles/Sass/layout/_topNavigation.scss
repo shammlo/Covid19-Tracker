@@ -1,15 +1,68 @@
-.top-navigation {
-    padding: 1.6rem;
+.top__navigation {
+    padding: 1rem 1.4rem;
     background-color: rgb(40, 48, 70);
     border-radius: 6px;
     min-height: 4.4rem;
     font-size: 1.8rem;
-    width: calc(100% - 30rem - 0rem);
+    // width: calc(100% - 30rem - 0rem);
     position: fixed;
     right: 0;
     top: 0;
-    // left: 26rem;
-    margin: 1rem 2rem 0 1rem;
+    left: 30rem;
+    margin: 1rem 2rem 0 2rem;
+    z-index: 100;
+
+    &--content {
+        display: flex;
+        align-items: center;
+    }
+
+    &--button {
+        // color: black;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        &:active {
+            outline: none;
+        }
+    }
+    &--toggle {
+        // margin: 1em;\
+        width: 2rem;
+        color: black;
+        height: 100%;
+        margin-right: 2.5rem;
+        &:active {
+            outline: none;
+        }
+
+        &:before,
+        &:after,
+        div {
+            content: '';
+            background-color: var(--color-grey-light-1);
+            border-radius: 3px;
+            display: block;
+            height: 1px;
+            // padding: 1px 0rem;
+            margin: 7px 0;
+            transition: all 0.2s ease-in-out;
+        }
+
+        // &:hover:before {
+        //     transform: translateY(12px) rotate(135deg);
+        // }
+
+        // &:hover:after {
+        //     transform: translateY(-12px) rotate(-135deg);
+        // }
+
+        // &:hover div {
+        //     transform: scale(0);
+        // }
+    }
 }
 
 .svg-icon {
