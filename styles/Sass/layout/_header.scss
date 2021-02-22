@@ -7,5 +7,21 @@
     background-color: var(--color-primary);
     background-color: #212136;
     background-color: rgb(40, 48, 70);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all 0.2s;
 }
+
+.show-sideNav {
+    display: block;
+    transform: translateX(0);
+}
+
+.hidden-sideNav {
+    width: 7rem;
+}
+
 //************************************
