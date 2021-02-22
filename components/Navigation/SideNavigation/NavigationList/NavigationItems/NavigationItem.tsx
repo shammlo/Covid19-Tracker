@@ -7,6 +7,7 @@ interface Props {
     href: string;
     title: string;
     children?: React.ReactNode;
+    show?: boolean;
 }
 const NavigationItem = (props: Props) => {
     const router = useRouter();
@@ -26,7 +27,9 @@ const NavigationItem = (props: Props) => {
                 <Link href={props.href}>
                     <a className="navigation__item--link">
                         {props.children}
-                        <p>{props.title}</p>
+                        <p className={`navigation__item--title ${props.show ? 'd-no' : 'd-in'}`}>
+                            {props.title}
+                        </p>
                     </a>
                 </Link>
             </li>
