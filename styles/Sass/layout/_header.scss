@@ -12,16 +12,16 @@
     top: 0;
     left: 0;
     height: 100%;
-    transition: all 0.2s;
+    transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0s;
+    backface-visibility: hidden;
 }
 
 .show-sideNav {
-    display: block;
-    transform: translateX(0);
+    width: 30rem;
 }
 
 .hidden-sideNav {
-    width: 7rem;
+    width: 8rem;
 }
 
 //************************************
