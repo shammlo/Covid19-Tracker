@@ -2,12 +2,14 @@
 import React from 'react';
 import NavigationItem from './NavigationItems/NavigationItem';
 //******************************** */
-
-const NavigationList = () => {
+interface Props {
+    show?: boolean;
+}
+const NavigationList = (props: Props) => {
     return (
         <ul className="navigation__list">
-            <NavigationItem title="Pages" href="" />
-            <NavigationItem href="/" title="Home">
+            <NavigationItem title={props.show ? '...' : 'Pages'} href="" />
+            <NavigationItem href="/" title="Home" show={props.show}>
                 <div className="navigation__item--icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +25,7 @@ const NavigationList = () => {
                     </svg>
                 </div>
             </NavigationItem>
-            <NavigationItem href="/charts" title="charts">
+            <NavigationItem href="/charts" title="charts" show={props.show}>
                 <div className="navigation__item--icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +41,7 @@ const NavigationList = () => {
                     </svg>
                 </div>
             </NavigationItem>
-            <NavigationItem href="/tables" title="Tables">
+            <NavigationItem href="/tables" title="Tables" show={props.show}>
                 <div className="navigation__item--icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
