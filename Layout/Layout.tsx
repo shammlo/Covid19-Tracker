@@ -11,10 +11,14 @@ const Layout = (props: any) => {
     };
     return (
         <div className="app">
-            <div className="layout">
+            <div
+                className={`layout wrapper ${
+                    sideNavigation ? 'side-menu-collapsed' : 'side-menu-expanded'
+                }`}
+            >
                 <SideNavigation show={sideNavigation} />
                 <TopNavigation showSideNavigation={showSideNavigation} />
-                <main className="main__container">{props.children}</main>
+                <main className="main__container content ">{props.children}</main>
             </div>
         </div>
     );
