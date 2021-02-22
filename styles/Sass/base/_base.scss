@@ -84,6 +84,18 @@ body {
     margin-left: 30rem;
     z-index: 50;
 }
+
+.side-menu-collapsed {
+    .main__container {
+        margin-left: 8rem;
+    }
+    .top__navigation {
+        left: 8rem;
+    }
+}
+.content {
+    transition: 0.3s ease all;
+}
 .home {
     // width: 30%;
     &-content {
