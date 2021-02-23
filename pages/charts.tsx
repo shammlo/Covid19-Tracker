@@ -1,6 +1,6 @@
 //********** IMPORTS ************* */
 import React from 'react';
-import Charts from '../containers/Charts/Charts';
+import Charts from '../containers/Views/Charts/Charts';
 //******************************** */
 
 const charts = () => {
