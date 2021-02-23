@@ -1,4 +1,9 @@
 //********** CARDS **********/
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
 .card__box {
     // min-width: 43rem;
     background-color: var(--dark-4);
