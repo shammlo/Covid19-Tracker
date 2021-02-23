@@ -7,6 +7,7 @@
 @import './base/typography';
 
 @import './layout/header';
+@import './layout/home-content';
 @import './layout/mobileNavigation';
 @import './layout/checkout';
 @import './layout/contact';
@@ -28,4 +29,4 @@
 @import './components/order';
 @import './components/inputs';
 
-@import './pages/home';
+@import './pages/containers';
