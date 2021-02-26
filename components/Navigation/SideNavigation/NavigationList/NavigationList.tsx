@@ -25,6 +25,8 @@ const NavigationList = (props: Props) => {
                     </svg>
                 </div>
             </NavigationItem>
+            <NavigationItem title={props.show ? '...' : 'Charts and tables'} href="" />
+
             <NavigationItem href="/charts" title="charts" show={props.show}>
                 <div className="navigation__item--icon">
                     <svg
