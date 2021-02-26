@@ -10,6 +10,12 @@
     z-index: 50;
 }
 
+.content {
+    position: relative;
+    transition: all 0.3s ease;
+    backface-visibility: hidden;
+}
+
 .side-menu-collapsed {
     .main__container {
         margin-left: 8rem;
@@ -20,6 +26,7 @@
 }
 
 .layout {
+    font-size: inherit;
     // overflow: hidden;
     // height: 100%;
 }
