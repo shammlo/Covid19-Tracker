@@ -7,15 +7,30 @@ interface Props {
     title: string;
     href: string;
     show?: boolean;
+    secondTitle?: string;
+    mainClass?: string;
 }
 const NavigationLogo = (props: Props) => {
     return (
-        <div className="logo">
+        <div className={props.mainClass}>
             <Link href={props.href}>
-                <a className="logo__link">
-                    <img className="logo__link--img" src={props.src} width={20} height={20} />
-                    <h2 className={`logo__link--title ${props.show ? 'd-no' : 'd-in'}`}>
+                <a className={`${props.mainClass}__link`}>
+                    <img
+                        className={`${props.mainClass}__link--img`}
+                        src={props.src}
+                        width={20}
+                        height={20}
+                        alt="Logo"
+                    />
+                    <h2
+                        className={`${props.mainClass}__link--title ${
+                            props.show ? 'd-no' : 'd-in'
+                        }`}
+                    >
                         {props.title}
+                        {props.secondTitle ? (
+                            <span className={`${props.mainClass}-typo`}>{props.secondTitle}</span>
+                        ) : null}
                     </h2>
                 </a>
             </Link>

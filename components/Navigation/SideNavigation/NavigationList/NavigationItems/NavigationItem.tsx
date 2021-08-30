@@ -1,7 +1,8 @@
 //********** IMPORTS ************* */
-import React from 'react';
+import React, { useContext } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import MobileMenuContext from '../../../../../helpers/Context/MobileMenuContext';
 //******************************** */
 interface Props {
     href: string;
@@ -9,14 +10,21 @@ interface Props {
     children?: React.ReactNode;
     show?: boolean;
 }
-const NavigationItem = (props: Props) => {
+const NavigationItem: React.FC<Props> = (props) => {
     const router = useRouter();
+    const setMobileMenu = useContext(MobileMenuContext);
+
     let classes = ['navigation__item'];
     if (router.pathname === props.href) {
         classes.push('active');
     }
+    const mobileMenuHandler = () => {
+        if (window.innerWidth < 1200) {
+            setMobileMenu(false);
+        }
+    };
     let link = (
-        <li className="navigation__item">
+        <li className="navigation__header">
             <span className="navigation__list--title"> {props.title}</span>
         </li>
     );
@@ -25,11 +33,14 @@ const NavigationItem = (props: Props) => {
         link = (
             <li className={classes.join(' ')}>
                 <Link href={props.href}>
-                    <a className="navigation__item--link">
+                    <a
+                        className="navigation__item--link d-flex ai-c"
+                        onClick={() => mobileMenuHandler()}
+                    >
                         {props.children}
-                        <p className={`navigation__item--title ${props.show ? 'd-no' : 'd-in'}`}>
+                        <span className={`navigation__item--title ${props.show ? 'd-no' : 'd-in'}`}>
                             {props.title}
-                        </p>
+                        </span>
                     </a>
                 </Link>
             </li>
