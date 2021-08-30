@@ -1,6 +1,7 @@
 //********** IMPORTS **********/
-import * as actions from '../../Actions/actions';
 import { put } from 'redux-saga/effects';
+import * as actions from '../../Actions/actions';
+
 import axios from 'axios';
 //************************************
 export function* fetchVaccineData(): any {
