@@ -53,4 +53,98 @@
         box-shadow: 0 0 1px 2px var(--green) !important;
     }
 }
+
+.btn-lock {
+    // position: absolute;
+    // top: calc(50% - 32px);
+    // left: calc(50% - 32px);
+    display: inline-block;
+    background: #ff5b5b;
+    background: #20cca5;
+
+    width: 3rem;
+    height: 3rem;
+    box-sizing: border-box;
+    padding: 12px 0 0 18px;
+    padding: 5px 0 0 4.9px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+    svg {
+        fill: none;
+        transform: translate3d(0, 0, 0);
+        width: 2rem;
+        height: 2rem;
+        .bling {
+            stroke: #fff;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-dasharray: 3;
+            stroke-dashoffset: 15;
+            transition: all 0.3s ease;
+        }
+        .lock {
+            stroke: #fff;
+            stroke-width: 4;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-dasharray: 36;
+            stroke-dasharray: 48;
+            transition: all 0.4s ease;
+            // transform: translateY(1px);
+        }
+        .lockb {
+            fill: #fff;
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            transform: rotate(0deg);
+            transform-origin: 14px 22px;
+            transition: all 0.2s ease;
+        }
+    }
+}
+#inpLock {
+    display: none;
+    &:checked {
+        & + label {
+            background: #20cca5;
+            background: #ff5b5b;
+
+            svg {
+                opacity: 1;
+                .bling {
+                    animation: bling 0.3s linear forwards;
+                    animation-delay: 0.2s;
+                }
+                .lock {
+                    stroke-dasharray: 36;
+                    animation: locked 0.3s linear forwards;
+                }
+                .lockb {
+                    transform: rotate(8deg);
+                    transform-origin: 14px 22px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bling {
+    50% {
+        stroke-dasharray: 3;
+        stroke-dashoffset: 12;
+    }
+    100% {
+        stroke-dasharray: 3;
+        stroke-dashoffset: 9;
+    }
+}
+
+@keyframes locked {
+    50% {
+        transform: translateY(1px);
+    }
+}
+
 //************************************

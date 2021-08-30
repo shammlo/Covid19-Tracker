@@ -1,21 +1,22 @@
 // * ---- MAIN -----*\\
 @import './abstracts/variables';
 @import './abstracts/mixins';
+@import './abstracts/fonts';
+
+@import './theme/theme';
 
 @import './base/base';
 @import './base/utilities';
 @import './base/typography';
 
-@import './layout/header';
-@import './layout/home-content';
+@import './layout/side-menu';
 @import './layout/mobileNavigation';
-@import './layout/checkout';
-@import './layout/contact';
-@import './layout/authentication';
 @import './layout/topNavigation';
 @import './layout/sideNavigation';
+@import './layout/footer';
 
 @import './components/animations';
+@import './components/cards';
 @import './components/buttons';
 @import './components/burgerIngredients';
 @import './components/burger';
@@ -28,5 +29,10 @@
 @import './components/loader';
 @import './components/charts';
 @import './components/inputs';
+@import './components/tables';
+@import './components/maps';
 
 @import './pages/containers';
+@import './pages/home-content';
+@import './pages/about_data';
+@import './pages/charts-page';

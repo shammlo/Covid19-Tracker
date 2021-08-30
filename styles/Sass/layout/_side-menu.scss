@@ -1,0 +1,108 @@
+//********** HEADER ***********/
+.app {
+    .main-menu {
+        height: 100%;
+        transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0s;
+        backface-visibility: hidden;
+        z-index: 200;
+    }
+
+    .side-menu {
+        color: var(--color-white);
+        // background-color: var(--color-primary);
+        // background-color: #212136;
+        background-color: var(--c-bg-secondary);
+        box-shadow: 0 0 15px 0 rgb(34 41 47 / 10%);
+    }
+    .fixed-side-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        @include mq(laptop) {
+            left: -26rem;
+            opacity: 0;
+        }
+    }
+    .show-sideNav {
+        width: 26rem;
+    }
+    .hidden-sideNav {
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            width: 26rem;
+            box-shadow: rgba(0, 0, 0, 0.76) 0px 22px 80px 10px;
+
+            .logo {
+                &__link {
+                    &--title {
+                        display: block;
+                        transform: rotateY(0deg) !important;
+                        opacity: 1 !important;
+                        color: inherit;
+                    }
+                }
+            }
+            .navigation {
+                &__item {
+                    &--title {
+                        display: block;
+                        transform: rotateY(0deg) !important;
+                        opacity: 1 !important;
+                    }
+                    &--icon {
+                        margin-right: 1rem !important;
+                    }
+                }
+            }
+
+            .main-content .container {
+                background-color: red;
+            }
+        }
+        width: 8rem;
+
+        .navigation {
+            &__item {
+                &--link {
+                    // padding: 0.6rem 1.3rem !important;
+                    padding: 0.6rem 1.4rem !important;
+
+                    // .navigation__item--icon {
+                    //     // width: 2.5rem;
+                    //     // height: 2.5rem;
+                    // }
+                }
+            }
+        }
+    }
+}
+.layout .main-menu .hidden-sideNav {
+    .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-main-container:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+}
+
+.menu-open {
+    .main-menu {
+        transform: translate3d(26rem, 0, 0);
+        opacity: 1;
+        transition: width 0.25s, opacity 0.25s, transform 0.25s;
+    }
+}
+.menu-close {
+    .fixed-side-menu {
+        @include mq(laptop) {
+            left: -26rem;
+            opacity: 0;
+        }
+    }
+}
+//************************************

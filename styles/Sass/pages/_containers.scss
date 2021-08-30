@@ -1,16 +1,63 @@
 //* ----------------- main-container ---------------- *\\
 
-.main__container {
-    padding: 1.8rem;
-    padding: 9rem 2rem 0; //- if top Nav was position fixed
-    color: var(--color-white);
-    // width: 100%;
+.wrapper .main__container {
+    color: var(--f-c-primary);
     position: relative;
-    margin-left: 30rem;
-    z-index: 50;
+    margin-left: 26rem;
+    font-family: inherit;
+    min-height: calc(100% - var(--footer-height));
+
+    @include mq(laptop) {
+        margin-left: 0;
+    }
 }
 
-.content {
+.fixed-top-navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 26rem;
+
+    @include mq(laptop) {
+        left: 0;
+    }
+}
+
+.main__container .main-wrapper {
+    // padding: 9rem 3rem 0; //- if top Nav was position fixed
+    padding: 9rem 3rem 3rem 3rem;
+    z-index: 50;
+    overflow: hidden;
+    color: inherit;
+    .data.cards-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include mq($bp-1000) {
+            // flex-direction: column;
+        }
+    }
+
+    .data-card {
+        // height: 40.6rem;
+        min-height: 38rem;
+        max-height: 42rem;
+        @include mq(laptop) {
+            &:first-child {
+                margin-bottom: 2rem;
+            }
+        }
+        @include mq($bp-1000) {
+            width: 100%;
+            &:not(.vac-card):not(.info-card) {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+.wrapper .main-content {
     position: relative;
     transition: all 0.3s ease;
     backface-visibility: hidden;
@@ -20,19 +67,24 @@
     .main__container {
         margin-left: 8rem;
     }
-    .top__navigation {
+    .fixed-top-navbar {
         left: 8rem;
+    }
+    .footer {
+        margin-left: 8rem;
     }
 }
 
 .layout {
     font-size: inherit;
     // overflow: hidden;
-    // height: 100%;
+    font-weight: inherit;
+    font-family: inherit;
+    height: 100%;
 }
 
 .app {
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-grey-light-2);
 }

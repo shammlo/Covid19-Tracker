@@ -70,12 +70,182 @@
 .lds-ring div:nth-child(3) {
     animation-delay: -0.15s;
 }
-@keyframes lds-ring {
+
+.card-skeleton {
+    width: 100%;
+    background: transparent;
+    // padding: 30px;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+    .description {
+        // margin: 25px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .description .line {
+        background: #d9d9d9;
+        border-radius: 10px;
+        height: 0.9rem;
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(
+            to right,
+            #d9d9d9 0%,
+            rgba(0, 0, 0, 0.185) 20%,
+            #d9d9d9 40%,
+            #d9d9d9 75%,
+            #d9d9d9 100%
+        );
+        background-repeat: no-repeat;
+        background-size: 450px 400px;
+        animation: shimmer 1.5s linear infinite;
+    }
+    .description .line-1 {
+        width: calc(100% - 30%);
+    }
+    .description .line-2 {
+        width: calc(100% - 20%);
+        margin: 13px 0;
+    }
+    .description .line-3 {
+        width: calc(100% - 30%);
+    }
+}
+
+svg.tea {
+    --secondary: #33406f;
+}
+svg.tea #teabag {
+    transform-origin: top center;
+    transform: rotate(3deg);
+    animation: swing 2s infinite;
+}
+svg.tea #steamL {
+    stroke-dasharray: 13;
+    stroke-dashoffset: 13;
+    animation: steamLarge 2s infinite;
+}
+svg.tea #steamR {
+    stroke-dasharray: 9;
+    stroke-dashoffset: 9;
+    animation: steamSmall 2s infinite;
+}
+@-moz-keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@-webkit-keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@-o-keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@-moz-keyframes steamLarge {
     0% {
-        transform: rotate(0deg);
+        stroke-dashoffset: 13;
+        opacity: 0.6;
     }
     100% {
-        transform: rotate(360deg);
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes steamLarge {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.6;
+    }
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@-o-keyframes steamLarge {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.6;
+    }
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@keyframes steamLarge {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.6;
+    }
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@-moz-keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+@-o-keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+@keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
     }
 }
 

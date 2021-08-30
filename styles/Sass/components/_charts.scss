@@ -5,9 +5,16 @@
     border: 0px;
 }
 
-.vaccine-chart {
-    height: 100%;
+.vaccine-chart,
+.pie-chart,
+.line-chart {
+    // height: 100%;
+    margin-top: 0.5rem;
+}
+.main-content .main-wrapper .chart-container {
     width: 95%;
     margin: 0 auto;
+    max-height: 30rem;
+    max-height: 28rem;
 }
 //************************************

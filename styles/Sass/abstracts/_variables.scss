@@ -1,16 +1,31 @@
 //* ----------------- COLORS ---------------- *\\
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 
+.dark-mode,
+// .light-mode,
 :root {
     --color-primary: #242526;
     --color-primary-2: #283046;
+    --c-primary: hsl(224, 27%, 22%);
+    --c-bg-primary: hsl(224, 38%, 14%);
+    --c-bg-primary-dark: hsl(224, 38%, 14%);
+    --c-bg-body: hsl(224, 38%, 14%);
+    --c-bg-primary-set: hsl(224, 38%, 14%);
+    --c-bg-secondary: hsl(224, 27%, 22%);
+    --c-nav-item-hover: hsla(0, 0%, 100%, 0.06);
+    --c-nav-item-active: hsla(0, 0%, 100%, 0.14);
+    --c-icon-fill: hsl(0, 0%, 100%);
+    --c-table-cases: hsl(48, 100%, 83%);
+
     --color-primary-rgb: 198, 153, 99;
 
     --color-primary-dark: #18191a;
     --color-primary-light: #242526;
 
-    --color-secondary: rgb(248, 249, 253);
+    --color-secondary: rgb(240, 242, 243);
+    --color-secondary-light: rgb(255, 255, 255);
 
     --color-grey-light-1: #f9f7f6;
     --color-grey-light-2: #d8d8d8;
@@ -20,16 +35,27 @@
     --color-grey-dark-2: #61647a;
     --color-grey-dark-3: rgb(155, 154, 154);
 
+    //-- font color
+
+    --f-c-main: hsl(0, 0%, 85%);
+    --f-c-primary: hsl(0, 0%, 100%);
+    // --f-c-primary: hsl(0, 0%, 77%);
+    --f-c-secondary: hsl(0, 0%, 80%);
+    --f-c-secondary-lighter: hsl(0, 0%, 75%);
+    --f-weight-primary: 300;
     // FONT VARIABLES
-    --font-primary: 'Lato', sans-serif;
+    --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Roboto Mono', monospace, sans-serif;
 
     --color-white: #fff;
-    --color-black: #000;
 
-    --border-primary: 0.05rem solid #6c757d;
-    --border-secondary: 1px solid rgba(255, 255, 255, 0.1);
+    --color-black: #000;
+    --main-content-ml: 26rem;
+    --footer-height: 5.5rem;
+    --border-primary: 0.05rem solid #84929e;
+    --border-secondary: 1px solid rgba(255, 255, 255, 0.15);
     --border-white: 0.05rem solid #3a4046;
+    --bg-custom: rgb(34 41 47 / 10%);
 
     --blue: #007bff;
     --indigo: #6610f2;
@@ -37,7 +63,7 @@
     --pink: #e83e8c;
     --red: #dc3545;
     --red-dark: #e02336;
-    --red-light: #b93b47;
+    --red-light: #da5260;
     --red-lighter: #db6c77;
     --orange: #ff9742;
     --yellow: #fcbd00;
@@ -74,6 +100,40 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
 }
+.light-mode {
+    // --c-bg-secondary: rgb(240, 242, 243);
+    --c-nav-item-hover: linear-gradient(118deg, #b5b0f5, rgba(166, 158, 245, 0.6));
+    --c-nav-item-active: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
+    --c-icon-fill: hsl(0, 0%, 0%);
+    --c-bg-primary-light: hsl(200, 11%, 95%);
+    --c-bg-body: hsl(200, 11%, 95%);
+    --c-bg-secondary-light: hsl(0, 0%, 100%);
+    --c-bg-secondary: hsl(0, 0%, 100%);
+    --c-bg-primary-set: hsl(200, 11%, 95%);
+    // --f-c-main: hsl(247, 5%, 34%);
+    --f-c-main: hsl(253, 13%, 40%);
+    // --f-c-primary: hsl(251, 7%, 40%);
+    --f-c-primary: hsl(0, 0%, 20%);
+    // --f-c-primary: hsl(248, 5%, 34%);
+    --f-c-secondary: hsl(0, 0%, 38%);
+    --f-c-secondary-lighter: hsl(251, 13%, 29%);
+    --f-weight-primary: 400;
+    --c-table-cases: hsl(48, 100%, 50%);
+}
+// body,
+// body[data-theme='light'] {
+//     --color-text-primary: #27201a;
+//     --color-text-secondary: #076963;
+//     --color-bg-primary: #fff;
+//     --color-bg-toggle: #1e90ff;
+// }
+
+// body[data-theme='dark'] {
+//     --color-text-primary: #e3e3e3;
+//     --color-text-secondary: #ff6b00;
+//     --color-bg-primary: #15232d;
+//     --color-bg-toggle: #a9a9a9;
+// }
 
 // RESPONSIVE BREAKPOINTS
 $bp-4000: 250em; //  4000px
@@ -90,16 +150,11 @@ $bp-767: 47.9375em; // 767px;
 $bp-735: 46em; // 735px;
 $bp-700: 43.75em; // 735px;
 $bp-600: 37.5em; // 600px;
+$bp-650: 40.625em; // 650px
+$bp-585: 36.56em; // 585px
 $bp-500: 31.25em; // 500px;
 $bp-450: 28.125em; // 450px;
 $bp-414: 25.875em; // 450px;
 $bp-400: 25em; // 400px;
 $bp-375: 23.4375em; // 375px;
 $bp-350: 21.875em; // 350px;
-
-$color-white: #fff;
-$color-black: #000;
-$grid-width: 125rem;
-$gap-vertical: 8rem;
-$gap-vertical-small: 6rem;
-$gap-horizontal: 6rem;

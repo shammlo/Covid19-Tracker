@@ -1,17 +1,24 @@
 //********** BUTTONS **********/
 
 .btn {
-    background-color: white;
+    background-color: transparent;
     font: inherit;
     border: 1px solid transparent;
-    padding: 8px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 0.6rem;
+    color: inherit;
+    outline: none;
+
+    &:active {
+        outline: none;
+    }
 }
 .btn__norm {
     background-color: var(--primary);
     outline: none;
     color: var(--color-white);
+    padding: 0.7rem 1.8rem;
+    letter-spacing: 0.6px;
 
     &:hover {
         // color: var(--color-black);
@@ -28,6 +35,23 @@
             color: var(--color-black);
             background-color: var(--primary-light);
         }
+    }
+}
+.btn-norm {
+    background-image: linear-gradient(to right, #4776e6 0%, #8e54e9 51%, #4776e6 100%);
+    padding: 8px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    // box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    letter-spacing: 0.6px;
+
+    &:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
     }
 }
 .btn__green {

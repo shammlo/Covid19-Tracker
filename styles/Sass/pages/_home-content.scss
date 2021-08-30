@@ -1,0 +1,39 @@
+.home-content {
+    width: 100%;
+
+    .data {
+        .data-analytics {
+            // height: 30rem;
+
+            // max-height: 35rem;
+
+            &--title {
+                height: 10rem;
+                // display: flex;
+                // justify-content: space-between;
+            }
+        }
+
+        .pie-card {
+            width: 33%;
+        }
+
+        .vac-card {
+            width: 65%;
+        }
+
+        .line-card {
+            width: 65%;
+        }
+        .info-card {
+            width: 33%;
+        }
+
+        // .pie-card,
+        // .vac-card,
+        // .line-card,
+        // .info-card {
+
+        // }
+    }
+}

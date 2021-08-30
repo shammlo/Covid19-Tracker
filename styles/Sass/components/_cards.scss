@@ -1,0 +1,57 @@
+.app .main-content .container .card {
+    // display: flex;
+    // flex-direction: column;
+    // flex: 0 0 100%;
+    overflow: hidden;
+    background-color: var(--c-bg-secondary);
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
+    // padding-right: 1rem;
+    // padding-left: 1rem;
+
+    .card-header {
+        // height: 10rem;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+
+        &--icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            color: var(--color-grey-light-3);
+            & svg {
+                fill: var(--f-c-primary);
+            }
+        }
+
+        &--text {
+            font-size: 1.8rem;
+            color: var(--f-c-primary);
+            letter-spacing: 0.7px;
+        }
+    }
+
+    .card-body {
+        padding: 2rem;
+        flex: 1 1 auto;
+
+        &-data,
+        &-content {
+            span {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-data {
+            color: var(--f-c-secondary);
+            font-weight: var(--f-weight-primary);
+            letter-spacing: 0.6px;
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+}

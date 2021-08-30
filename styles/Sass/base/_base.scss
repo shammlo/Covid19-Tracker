@@ -1,10 +1,36 @@
 //******** BASE ********\\
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
+img {
+    aspect-ratio: attr(width) / attr(height);
 
+    height: auto;
+    width: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+p {
+    font-family: Roboto;
+    // font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: inherit;
+    color: #5e5873;
+    color: var(--f-c-primary);
+}
 html {
     margin: 0;
     padding: 0;
@@ -32,25 +58,55 @@ html {
     }
 }
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #18191a;
-    font-family: var(--body-font);
-    // background-image: url(https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg);
-    // background-image: url(https://i.imgur.com/WkoCXFZ.jpeg);
-    // background-image: url(https://w.wallhaven.cc/full/v9/wallhaven-v9g6r3.jpg);
-    // background-size: cover;
-    // background-position: center;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(44, 50, 63);
-    background-color: rgb(22, 29, 49);
+    font-size: inherit;
+    font-weight: 400;
+    // color: #6e6b7b;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--c-bg-body);
+    color: var(--f-c-primary);
 }
 
+body::-webkit-scrollbar {
+    width: 0.9rem; /* width of the entire scrollbar */
+    @media only screen and (min-width: $bp-4000) {
+        width: 5rem;
+    }
+}
+body::-webkit-scrollbar-track {
+    background: var(--dark-4); /* color of the tracking area */
+    border-radius: 1px;
+}
+body::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: rgb(73, 73, 73);
+    background-color: #606060;
+    /* color of the scroll thumb */
+    border-radius: 1px; /* roundness of the scroll thumb */
+    border: 3px solid #606060; /* creates padding around scroll thumb */
+
+    &:hover {
+        background-color: rgb(100, 100, 100);
+        border: 3px solid rgb(100, 100, 100); /* creates padding around scroll thumb */
+    }
+}
+// .app,
+// #__next,
+// body {
+//     height: 100%;
+// }
+html,
+html body {
+    height: 100%;
+}
+#__next {
+    font-size: inherit;
+    font-family: inherit;
+    height: 100%;
+}
+.app {
+    height: 100%;
+}
 //*************************

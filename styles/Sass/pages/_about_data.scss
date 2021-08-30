@@ -1,0 +1,27 @@
+.main-wrapper .about-data {
+    color: inherit;
+    font-size: 1.6rem;
+    font-family: inherit;
+
+    .about-info {
+        color: inherit;
+        font-family: inherit;
+
+        .about-info-content {
+            flex: 0 0 49%;
+        }
+
+        & > div.card:first-of-type {
+            @include mq($bp-1100) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    &-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
