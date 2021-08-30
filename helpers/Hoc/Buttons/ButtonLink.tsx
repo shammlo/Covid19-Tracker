@@ -1,27 +1,33 @@
 //********** IMPORTS **********/
-import React, { MouseEventHandler } from 'react';
+import React from 'react';
+import Link from 'next/link';
 //************************************
 
 interface Props {
-    clicked?: MouseEventHandler<HTMLButtonElement> | undefined;
+    clicked?: () => void;
     class?: string;
+    linkClass?: string;
     onClick?: () => void;
     style?: React.CSSProperties;
     children?: React.ReactNode;
     disabled?: boolean;
-    ariaLabel?: string;
+    href: string;
+    target?: boolean;
 }
-const button = (props: Props) => {
+const ButtonLink = (props: Props) => {
     return (
         <button
             className={props.class}
             onClick={props.clicked}
             style={props.style}
             disabled={props.disabled}
-            aria-label={props.ariaLabel}
         >
-            {props.children}
+            <Link href={props.href}>
+                <a className={props.linkClass} target={props.target ? '_blank' : undefined}>
+                    {props.children}
+                </a>
+            </Link>
         </button>
     );
 };
-export default button;
+export default ButtonLink;
