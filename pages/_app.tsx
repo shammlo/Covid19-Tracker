@@ -4,16 +4,16 @@ import Layout from '../Layout/Layout';
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
-import historyDataReducer from '../Store/Reducers/HistoryData/HistoryDataReducer';
-import GlobalDataReducer from '../Store/Reducers/GlobalData/GlobalDataReducer';
-import VaccineDataReducer from '../Store/Reducers/Vaccine/VaccineReducer';
-import CountriesDataReducer from '../Store/Reducers/CountriesData/CountriesDataReducer';
+import historyDataReducer from '../store/Reducers/HistoryData/HistoryDataReducer';
+import GlobalDataReducer from '../store/Reducers/GlobalData/GlobalDataReducer';
+import VaccineDataReducer from '../store/Reducers/Vaccine/VaccineReducer';
+import CountriesDataReducer from '../store/Reducers/CountriesData/CountriesDataReducer';
 import {
     watchHistoryData,
     watchGlobalData,
     watchVaccineData,
     watchCountriesData,
-} from '../Store/Sagas/saga';
+} from '../store/Sagas/saga';
 import Head from 'next/head';
 //******************************** */
 //* MANAGING STORE
