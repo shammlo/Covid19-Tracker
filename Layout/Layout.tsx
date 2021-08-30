@@ -8,7 +8,7 @@ import Footer from '../components/Footer/Footer';
 import SVGIcons from '../components/Icons/Icons';
 
 import { connect } from 'react-redux';
-import * as actions from '../Store/Actions/actions';
+import * as actions from '../store/Actions/actions';
 //- custom Context
 import MobileMenuContext from '../helpers/Context/MobileMenuContext';
 //******************************** */
