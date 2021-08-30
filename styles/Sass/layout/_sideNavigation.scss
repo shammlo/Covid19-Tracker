@@ -8,9 +8,9 @@
     touch-action: auto;
     -ms-touch-action: auto;
     overflow-y: auto;
-    @media only screen and (max-width: 499px) {
-        display: none;
-    }
+    // @media only screen and (max-width: 499px) {
+    //     display: none;
+    // }
 
     &__list {
         display: flex;
