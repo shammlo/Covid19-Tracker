@@ -71,7 +71,7 @@ const ThemeChange: React.FC<Props> = (props) => {
                     // onClick={() => toggleLightTheme()}
                     style={{ width: '100%', height: '100%' }}
                 >
-                    <Icons title={light} class="theme-icon" />
+                    <Icons title={'light'} class="theme-icon" />
                 </Wrapper>
             </Wrapper>
         </Wrapper>
