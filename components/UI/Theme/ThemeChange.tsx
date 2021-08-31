@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import SVGIcons from '../../SVGIcons/SVGIcons';
-import dynamic from 'next/dynamic';
-const SVGIcons = dynamic(() => import('../../Icons/Icons'));
+// import dynamic from 'next/dynamic';
+import Icons from '../../Icons/Icons';
 import Wrapper from '../../../helpers/Hoc/Wrappers/Wrapper';
 // *******************************
 interface Props {
@@ -71,7 +71,7 @@ const ThemeChange: React.FC<Props> = (props) => {
                     // onClick={() => toggleLightTheme()}
                     style={{ width: '100%', height: '100%' }}
                 >
-                    <SVGIcons title={light} class="theme-icon" />
+                    <Icons title={light} class="theme-icon" />
                 </Wrapper>
             </Wrapper>
         </Wrapper>
