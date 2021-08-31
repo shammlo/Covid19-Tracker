@@ -9,7 +9,7 @@
 .dark-theme .app.layout .header__navbar.top-navbar {
     background-color: var(--c-bg-secondary);
 }
-.header__navbar {
+.app .header__navbar {
     // padding: 1rem 1.4rem;
     height: 4rem;
     border-radius: 6px;
@@ -21,6 +21,10 @@
     // }
 
     margin: 1rem 3rem 0 3rem;
+
+    @include mq($bp-600) {
+        margin: 1rem 2rem 0 2rem;
+    }
 
     .top-navbar-content {
         box-shadow: var(--shadow-elevation-1);
