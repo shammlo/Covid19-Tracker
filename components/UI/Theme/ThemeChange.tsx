@@ -10,7 +10,7 @@ interface Props {
 }
 const ThemeChange: React.FC<Props> = (props) => {
     const [lightIcon, setLightIcon] = useState(false);
-    const [light, setLight] = useState<string>();
+    const [light, setLight] = useState<string>('sun');
     let theme = typeof localStorage != 'undefined' && (localStorage as any).getItem('theme');
     let dataTheme =
         typeof localStorage != 'undefined' && (localStorage as any).getItem('data-theme');
@@ -71,7 +71,7 @@ const ThemeChange: React.FC<Props> = (props) => {
                     // onClick={() => toggleLightTheme()}
                     style={{ width: '100%', height: '100%' }}
                 >
-                    <Icons title={'light'} class="theme-icon" />
+                    <Icons title={light} class="theme-icon" />
                 </Wrapper>
             </Wrapper>
         </Wrapper>
