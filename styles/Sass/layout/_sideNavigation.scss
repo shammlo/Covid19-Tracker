@@ -79,10 +79,14 @@
             letter-spacing: 0.5px;
 
             @media only screen and (max-width: $bp-500) {
-                color: var(--color-white);
+                // color: var(--color-white);
                 // width: 60%;
                 padding: 1rem 0.5rem;
                 border-radius: 5px;
+
+                .navigation__item--icon {
+                    fill: var(--color-white);
+                }
             }
 
             &:hover,
@@ -117,6 +121,9 @@
         &.active .navigation__item--link:hover,
         &.active .navigation__item--link:active {
             transform: translateX(0) !important;
+        }
+        &.active .navigation__item--link .navigation__item--icon {
+            fill: var(--color-white);
         }
         &--icon {
             margin-right: 1rem;
