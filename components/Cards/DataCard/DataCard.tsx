@@ -62,7 +62,7 @@ const DataCard: React.FC<Props> = (props) => {
                 </h2>
                 <Wrapper class="card__box--info d-flex flex-c ai-c">
                     <Wrapper class="percentage-info">
-                        <span className={classes}>{percentage}%</span>
+                        <span className={classes}>{Math.abs(percentage)}%</span>
                     </Wrapper>
                     <Wrapper class="info-text d-flex flex-c ai-c">
                         <p>from yesterday{'\n'}</p>
