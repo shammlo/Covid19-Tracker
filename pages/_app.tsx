@@ -26,10 +26,14 @@ const mainReducer = combineReducers({
 });
 
 const sagaMiddleware = createSagaMiddleware();
-
-const composeEnhancers =
-    (typeof window != 'undefined' && (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
-    compose;
+// console.log(process.env.NODE_ENV);
+let composeEnhancers = compose;
+if (process.env.NODE_ENV) {
+    console.log('development');
+    composeEnhancers =
+        (typeof window != 'undefined' && (window as any)).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ||
+        compose;
+}
 
 const store = createStore(mainReducer, composeEnhancers(applyMiddleware(sagaMiddleware)));
 
