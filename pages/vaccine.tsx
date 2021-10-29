@@ -34,12 +34,7 @@ const Vaccine: React.FC<VaccineProps> = ({ candidatesData }) => {
                 {/* <link rel="shortcut icon" href="/virus-1.svg" /> */}
                 <title>Vaccine - Covid-19 </title>
             </Head>
-            <div className="home">
-                {' '}
-                <div className="page" style={{ marginBottom: '1rem' }}>
-                    <h1>Hi this is Vaccine page</h1>
-                </div>
-            </div>
+
             <section className="vaccine-page vaccine-content">
                 <Wrapper class="card">
                     <Wrapper class="card-header">

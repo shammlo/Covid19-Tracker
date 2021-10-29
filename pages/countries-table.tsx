@@ -30,12 +30,6 @@ const Tables: React.FC<TablesProps> = ({ countriesData, globalData }) => {
             <Head>
                 <title>Countries Tables - Covid-19</title>
             </Head>
-            <div className="home">
-                {' '}
-                <div className="page" style={{ marginBottom: '1rem' }}>
-                    <h1>Hi this is Tables page</h1>
-                </div>
-            </div>
 
             <section className="tables-page tables-content">
                 <Wrapper class="chart-info cards-container">

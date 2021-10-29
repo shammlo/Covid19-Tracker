@@ -153,9 +153,6 @@ const Home: React.FC<HomeProps> = ({
                 <title>Home - Covid-19</title>
             </Head>
             <section className="home home-content">
-                <Wrapper class="page" style={{ marginBottom: '1rem' }}>
-                    <h1>Hi this is Home page</h1>
-                </Wrapper>
                 <Wrapper class=" main-cards cards-container">{globalCards}</Wrapper>
 
                 <Wrapper class="data cards-container mt-l">

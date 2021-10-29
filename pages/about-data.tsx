@@ -15,12 +15,7 @@ const AboutData: React.FC<AboutDataProps> = () => {
                 {/* <link rel="shortcut icon" href="/virus-1.svg" /> */}
                 <title>About Data - Covid-19</title>
             </Head>
-            <div className="home">
-                {' '}
-                <div className="page" style={{ marginBottom: '1rem' }}>
-                    <h1>Hi this is About Data page</h1>
-                </div>
-            </div>
+
             <section className="about-data about-data-content">
                 <Wrapper class="about-info cards-container">
                     <Wrapper class="card flex-50">

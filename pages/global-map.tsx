@@ -338,12 +338,7 @@ const Map: React.FC<MapProps> = (props) => {
                 {/* <link rel="shortcut icon" href="/virus-1.svg" /> */}
                 <title>Map - Covid-19 Tracker</title>
             </Head>
-            <div className="home">
-                {' '}
-                <div className="page" style={{ marginBottom: '1rem' }}>
-                    <h1>Hi this is Map page</h1>
-                </div>
-            </div>
+
             <section className="about-data about-data-content">
                 <Wrapper class="card">
                     <Wrapper class="card-header">Global Map</Wrapper>

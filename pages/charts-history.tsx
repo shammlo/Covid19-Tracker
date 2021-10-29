@@ -50,11 +50,7 @@ const charts: React.FC<ChartPageProps> = ({ history, total, todayData }) => {
                 {/* <link rel="shortcut icon" href="/virus-1.svg" /> */}
                 <title>Charts - Covid-19</title>
             </Head>
-            <div className="home">
-                <div className="page" style={{ marginBottom: '1rem' }}>
-                    <h1>Hi this is Charts page</h1>
-                </div>
-            </div>
+
             <section className="chart-data chart-content">
                 <Wrapper class="chart-info cards-container">
                     {/* //-Line Chart */}
