@@ -149,7 +149,6 @@ const PieChart: React.FC<PieChartProps> = ({ todayData }) => {
         setPieChart({
             today_data: today_data,
         });
-        console.log('[pieChart] was rendered');
     }, []);
 
     //----------------------------------------------------------------

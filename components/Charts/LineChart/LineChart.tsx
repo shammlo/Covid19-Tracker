@@ -176,8 +176,6 @@ export const LineChart: React.FC<LineChartProps> = React.memo(
         };
 
         useEffect(() => {
-            console.log('[Line Chart] was rendered');
-
             setLineChart({
                 casesData: casesHistory,
                 deathsData: deathsHistory,
