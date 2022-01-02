@@ -14,15 +14,19 @@ Covid-19 virus tracker, using Sass, TypeScript, and Next.js, with disease.sh API
 - [Contributing](#contributing)
 - [:man_astronaut: Show your support](#man_astronaut-show-your-support)
 - [Feedback](#feedback)
+
+&nbsp;
 ## General info
 This web app is created to demonstrate the spread of the pandemic covid-19 virus, with implementation of charts, tables, and map, and the data updated rapidly.
+
+&nbsp;
 ## Website link and screenshot
 Link : https://covidvirus-tracker.vercel.app
 
 
 ![https://covidvirus-tracker.vercel.app](https://raw.githubusercontent.com/shammlo/my-portfolio/main/public/images/projects/project-2-light.png)
 
-
+&nbsp;
 ## 🛠 Languages and tools
 
 -    <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"></code> [Sass-Scss](https://sass-lang.com/)
@@ -34,20 +38,23 @@ Link : https://covidvirus-tracker.vercel.app
 -    <code><img height="20" src="https://raw.githubusercontent.com/mbrn/material-table.com/master/docs/assets/logo-back.png"></code> [Material-table](https://material-table.com/#/)
 -    <code><img height="20" src="https://camo.githubusercontent.com/fb4b319edc8e4001cf633fca4c2c6d93e77595159e1450c8f825eca3f41499a9/68747470733a2f2f7374617469632d6173736574732e6d6170626f782e636f6d2f7777772f6c6f676f732f6d6170626f782d6c6f676f2d626c61636b2e706e67"></code> [Mapbox](https://www.mapbox.com/)
 
-
+&nbsp;
 ## Data Resources
 
 -   All data are provided by [disease.sh](https://www.disease.sh/) API, for more information please head to their official website [disease.sh](https://www.disease.sh/).
 
+&nbsp;
 ## Contributing
 
 Contributions are always welcome!
 
+&nbsp;
 ## :man_astronaut: Show your support
 
 Give a ⭐️ or fork it if you like this project!
 
 
+&nbsp;
 ## Feedback
 
 If you have any feedback, please reach out to us at [shamlooo@yahoo.com](shamlooo@yahoo.com), or my twitter [Shamlo_](https://twitter.com/Shamlo_)
